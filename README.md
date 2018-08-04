@@ -1,4 +1,4 @@
-# generator-td-node-api-server [![NPM version]][npm-url]
+# generator-td-node-api-server
 
 ## Installation
 
