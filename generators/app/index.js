@@ -49,23 +49,54 @@ module.exports = class extends Generator {
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
       if (props.repositoryConfirm) {
-        return this.prompt(
-          repositoryUrlPrompt,
-        ).then(repositoryUrl => {
+        return this.prompt(repositoryUrlPrompt).then(repositoryUrl => {
           const responses = {
             ...repositoryUrl,
-            ...this.props,
+            ...this.props
           };
-        })
+          this.props = responses;
+        });
       }
       this.props = props;
     });
   }
 
   writing() {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+    this.fs.copyTpl(
+      this.templatePath('package.json'),
+      this.destinationPath('package.json'),
+      {
+        name: this.props.name.split(' ').join('-'),
+        description: this.props.description,
+        repository: this.props.repository,
+        author: this.props.author
+      }
+    );
+    this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), {
+      name: this.props.name
+    });
+    this.fs.copyTpl(
+      this.templatePath('CHANGELOG.md'),
+      this.destinationPath('CHANGELOG.md'),
+      {
+        name: this.props.name
+      }
+    );
+    this.fs.copyTpl(
+      this.templatePath('PULL_REQUEST_TEMPLATE.md'),
+      this.destinationPath('PULL_REQUEST_TEMPLATE.md'),
+      {}
+    );
+    // Hack to get around npm's magic with .gitignore
+    this.fs.copyTpl(
+      this.templatePath('gitignore.txt'),
+      this.destinationPath('.gitignore'),
+      {}
+    );
+    this.fs.copyTpl(
+      this.templatePath('.editorconfig'),
+      this.destinationPath('.editorconfig'),
+      {}
     );
   }
 
