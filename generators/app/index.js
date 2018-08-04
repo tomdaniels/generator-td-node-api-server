@@ -52,7 +52,7 @@ module.exports = class extends Generator {
         return this.prompt(repositoryUrlPrompt).then(repositoryUrl => {
           const responses = {
             ...repositoryUrl,
-            ...this.props
+            ...props
           };
           this.props = responses;
         });
