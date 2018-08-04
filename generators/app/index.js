@@ -7,7 +7,9 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
-      yosay(`Welcome to the grand ${chalk.red('generator-td-node-api-server')} generator!`)
+      yosay(
+        `Welcome to the grand ${chalk.red('generator-td-node-api-server')} generator!`
+      )
     );
 
     const prompts = [
