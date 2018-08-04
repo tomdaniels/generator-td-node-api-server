@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Added
+- Store prompt answers in props
+- Set up root files with dynamic details
 
 ## [0.1.0][] - 2018-08-04
 ### Added
