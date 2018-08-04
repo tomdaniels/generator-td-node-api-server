@@ -1,5 +1,4 @@
-# generator-td-node-api-server [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> API server boilerplate
+# generator-td-node-api-server [![NPM version]][npm-url]
 
 ## Installation
 
