@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.1.0][] - 2018-08-06
 ### Added
 - version script added to boilerplate package.json
 - changelog-verify & version-changelog added as dev deps.
@@ -29,7 +31,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Set up changelog versioning
 
 
-[Unreleased]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v0.2.0...v1.0.0
 [0.2.0]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/tomdaniels/generator-td-node-api-server/tree/v0.1.0
