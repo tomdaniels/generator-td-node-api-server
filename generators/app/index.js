@@ -72,6 +72,7 @@ module.exports = class extends Generator {
         author: this.props.author
       }
     );
+    this.fs.copyTpl(this.templatePath('config'), this.destinationPath('config'), {});
     this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), {
       name: this.props.name
     });
