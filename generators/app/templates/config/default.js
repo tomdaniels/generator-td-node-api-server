@@ -1,8 +1,6 @@
 const defer = require('config/defer').deferConfig;
 
 module.exports = {
-  NEW_RELIC_APP_NAME: process.env.NEW_RELIC_APP_NAME || 'Plex Requests API',
-
   PORT: process.env.PORT || 3000,
   SSL_PORT: process.env.SSL_PORT || 4430,
   NO_CDN_API_ENDPOINT: process.env.NO_CDN_API_ENDPOINT || '',
