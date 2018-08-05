@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - add `config` folder to template
 - add `src` folder to template
 
+### Removed
+- Unnecessary dependencies
+
 ## [0.2.0][] - 2018-08-04
 ### Added
 - Store prompt answers in props
