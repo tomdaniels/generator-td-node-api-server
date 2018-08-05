@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Added
+- version script added to boilerplate package.json
+- changelog-verify & version-changelog added as dev deps.
 
 ## [1.0.0][] - 2018-08-05
 ### Added
