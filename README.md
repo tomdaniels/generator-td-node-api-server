@@ -1,18 +1,55 @@
 # generator-td-node-api-server [![NPM version][npm-image]][npm-url]
 
-## Installation
+- Generator for a node server boilerplate.
 
-First, install [Yeoman](http://yeoman.io) and generator-td-node-api-server using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+## How to use it
+
+All you need to do is create a directory based on your project name, and let the generator do the rest!
 
 ```bash
-npm install -g yo
-npm install -g generator-td-node-api-server
+mkdir node-server && cd node-server
+npx -p yo -p generator-td-node-api-server -c 'yo td-node-api-server'
 ```
 
-Then generate your new project:
+## The Setup
 
-```bash
-yo td-node-api-server
+```
+.
+├── config
+│   ├── default.js
+│   ├── development.js
+│   ├── production.js
+│   ├── stage.js
+│   └── test.js
+├── src
+│   ├── config
+│   │    └── swagger
+│   │         ├── default.yaml
+│   │         └── swagger.yaml
+│   ├── controllers
+│   │    └── foo.js
+│   ├── core
+│   │   ├── logger.js
+│   │   └── run-health-check.js
+│   ├── middleware
+│   │   ├── error-handling.js
+│   │   ├── example-validator.js
+│   │   ├── no-cache.js
+│   │   ├── server-timing.js
+│   │   └── swagger-with-metrics.js
+│   ├── routes
+│   │    ├── versions
+│   │    │    └── 1.js
+│   │    └── index.js
+│   ├── app.js
+│   └── server.js
+│
+├── .editorconfig
+├── .gitignore
+├── CHANGELOG.md
+├── package.json
+├── PULL_REQUEST_TEMPLATE.md
+├── README.md
 ```
 
 ## Getting To Know Yeoman
@@ -29,7 +66,3 @@ ISC © [tomdaniels](https://www.github.com/tomdaniels)
 
 [npm-image]: https://badge.fury.io/js/generator-td-node-api-server.svg
 [npm-url]: https://npmjs.org/package/generator-td-node-api-server
-[travis-image]: https://travis-ci.org/tomdaniels/generator-td-node-api-server.svg?branch=master
-[travis-url]: https://travis-ci.org/tomdaniels/generator-td-node-api-server
-[daviddm-image]: https://david-dm.org/tomdaniels/generator-td-node-api-server.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/tomdaniels/generator-td-node-api-server
