@@ -75,7 +75,7 @@ module.exports = class extends Generator {
     this.fs.copyTpl(this.templatePath('config'), this.destinationPath('config'), {});
     this.fs.copyTpl(this.templatePath('src'), this.destinationPath('src'), {
       name: this.props.name.split(' ').join('-'),
-      description: this.props.description
+      description: this.props.description || this.props.name
     });
     this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), {
       name: this.props.name
