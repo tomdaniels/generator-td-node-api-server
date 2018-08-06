@@ -15,6 +15,9 @@ npx -p yo -p generator-td-node-api-server -c 'yo td-node-api-server'
 
 ```
 .
+├── test
+│   └── setup.js
+│
 ├── config
 │   ├── default.js
 │   ├── development.js
@@ -48,6 +51,7 @@ npx -p yo -p generator-td-node-api-server -c 'yo td-node-api-server'
 ├── .editorconfig
 ├── .gitignore
 ├── CHANGELOG.md
+├── jest.config.js
 ├── package.json
 ├── PULL_REQUEST_TEMPLATE.md
 └── README.md
