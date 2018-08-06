@@ -10,7 +10,14 @@ describe('generator-td-node-api-server:app', () => {
       .withPrompts({ someAnswer: true });
   });
 
-  it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+  it('generates the boilerplate', () => {
+    assert.file(['package.json']);
+    assert.file(['.editorconfig']);
+    assert.file(['PULL_REQUEST_TEMPLATE.md']);
+    assert.file(['README.md']);
+    assert.file(['CHANGELOG.md']);
+    assert.file(['.gitignore']);
+    assert.file(['src']);
+    assert.file(['config']);
   });
 });
