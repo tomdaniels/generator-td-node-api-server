@@ -33,6 +33,7 @@ describe('generator-td-node-api-server:app', () => {
     assert.file(['PULL_REQUEST_TEMPLATE.md']);
     assert.file(['README.md']);
     assert.file(['CHANGELOG.md']);
+    assert.file(['jest.config.js']);
     assert.file(['.gitignore']);
     assert.file(['src/routes/versions/1.js']);
     assert.file(['src/routes/index.js']);
@@ -53,5 +54,6 @@ describe('generator-td-node-api-server:app', () => {
     assert.file(['config/production.js']);
     assert.file(['config/development.js']);
     assert.file(['config/default.js']);
+    assert.file(['test/setup.js']);
   });
 });
