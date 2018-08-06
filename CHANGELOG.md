@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Fixed
+- File tree alignment on readme
 
 ## [1.1.1][] - 2018-08-06
 ### Updated

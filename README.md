@@ -21,6 +21,7 @@ npx -p yo -p generator-td-node-api-server -c 'yo td-node-api-server'
 │   ├── production.js
 │   ├── stage.js
 │   └── test.js
+│
 ├── src
 │   ├── config
 │   │    └── swagger
