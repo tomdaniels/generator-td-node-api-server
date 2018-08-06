@@ -16,5 +16,5 @@ module.exports = {
   isDevelopment: defer(
     () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development',
   ),
-  isTest: defer(() => process.env.NODE_ENV === 'test'),
+  isLocal: defer(() => process.env.NODE_ENV === 'local'),
 };
