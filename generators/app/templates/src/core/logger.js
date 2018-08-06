@@ -10,7 +10,7 @@ function createLogger(name) {
 
   if (config.isProduction) {
     logger = pino(pinoConfig);
-  } else if (config.isTest) {
+  } else if (config.isLocal) {
     pinoConfig.level = `silent`;
     logger = pino(pinoConfig);
   } else if (config.isDevelopment) {

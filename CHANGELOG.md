@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Changed
+- test for boilerplate file generation
 
 ## [1.1.2][] - 2018-08-06
 ### Fixed
