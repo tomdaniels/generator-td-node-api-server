@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Fixed
+- Previously if no description were provided, once the boilerplate is generated the application would not run as swagger cannot have a null description.
 
 ## [1.2.0][] - 2018-08-06
 ### Changed
