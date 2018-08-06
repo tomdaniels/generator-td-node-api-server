@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.3.0][] - 2018-08-06
 ### Added
 - Added jest test suite to boilerplate with config.
 
@@ -49,7 +51,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Set up changelog versioning
 
 
-[Unreleased]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.2.1...HEAD
+[Unreleased]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.2.1...v1.3.0
 [1.2.1]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.1.1...v1.1.2
