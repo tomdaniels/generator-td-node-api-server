@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "watch": "nodemon ./src/server.js",
     "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
   },
@@ -30,6 +30,9 @@
   },
   "devDependencies": {
     "changelog-verify": "^1.1.0",
-    "version-changelog": "^3.1.0"
+    "version-changelog": "^3.1.0",
+    "sinon": "^6.1.4",
+    "supertest": "^3.1.0",
+    "jest": "22.4.1"
   }
 }

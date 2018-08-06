@@ -72,6 +72,7 @@ module.exports = class extends Generator {
         author: this.props.author
       }
     );
+    this.fs.copyTpl(this.templatePath('test'), this.destinationPath('test'), {});
     this.fs.copyTpl(this.templatePath('config'), this.destinationPath('config'), {});
     this.fs.copyTpl(this.templatePath('src'), this.destinationPath('src'), {
       name: this.props.name.split(' ').join('-'),
@@ -101,6 +102,11 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('.editorconfig'),
       this.destinationPath('.editorconfig'),
+      {}
+    );
+    this.fs.copyTpl(
+      this.templatePath('jest.config.js'),
+      this.destinationPath('jest.config.js'),
       {}
     );
   }
