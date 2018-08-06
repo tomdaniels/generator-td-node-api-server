@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.2.1][] - 2018-08-06
 ### Fixed
 - Previously if no description were provided, once the boilerplate is generated the application would not run as swagger cannot have a null description.
 
@@ -45,7 +47,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Set up changelog versioning
 
 
-[Unreleased]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/tomdaniels/generator-td-node-api-server/compare/v1.1.0...v1.1.1
