@@ -1,4 +1,4 @@
-# generator-td-node-api-server [![NPM version][npm-image]][npm-url]
+# generator-td-node-api-server [![Build Status](https://travis-ci.com/tomdaniels/generator-td-node-api-server.svg?branch=master)](https://travis-ci.com/tomdaniels/generator-td-node-api-server) [![NPM version][npm-image]][npm-url]
 
 - Generator for a node server boilerplate.
 
