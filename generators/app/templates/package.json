@@ -1,8 +1,8 @@
 {
-  "name": "<%= name %>",
+  "name": "name",
   "version": "0.0.0",
-  "description": "<%= description %>",
-  "repository": "<%= repository %>",
+  "description": "description",
+  "repository": "repository",
   "main": "server.js",
   "scripts": {
     "start": "node ./src/server.js",
@@ -14,6 +14,7 @@
   "author": "Tom Daniels",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "compression": "^1.7.3",
     "config": "^2.0.1",
     "cookie-parser": "^1.4.3",
@@ -31,12 +32,13 @@
   },
   "devDependencies": {
     "changelog-verify": "^1.1.0",
-    "version-changelog": "^3.1.0",
+    "eslint": "^5.6.1",
+    "eslint-config-td-eslint-config": "^1.1.0",
+    "jest": "22.4.1",
+    "prettier": "^1.14.2",
     "sinon": "^6.1.4",
     "supertest": "^3.1.0",
-    "jest": "22.4.1",
-    "eslint-config-td-eslint-config": "^1.1.0",
-    "prettier": "^1.14.2"
+    "version-changelog": "^3.1.0"
   },
   "eslintConfig": {
     "extends": [

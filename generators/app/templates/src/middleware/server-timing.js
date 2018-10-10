@@ -6,17 +6,15 @@ if (
     -1
 ) {
   // No-op when not enabled
-  module.exports = function serverTimingNoOp() {
-    return (_, res, next) => {
-      /* eslint-disable no-param-reassign */
-      res.setMetric = () => {};
-      res.startTime = () => {};
-      res.endTime = () => {};
-      /* eslint-enable no-param-reassign */
-      if (typeof next === 'function') {
-        next();
-      }
-    };
+  module.exports = () => (_, res, next) => {
+    /* eslint-disable no-param-reassign */
+    res.setMetric = () => {};
+    res.startTime = () => {};
+    res.endTime = () => {};
+    /* eslint-enable no-param-reassign */
+    if (typeof next === 'function') {
+      next();
+    }
   };
 } else {
   // eslint-disable-next-line global-require

@@ -40,7 +40,6 @@ describe('generator-td-node-api-server:app', () => {
     assert.file(['src/middleware/swagger-with-metrics.js']);
     assert.file(['src/middleware/server-timing.js']);
     assert.file(['src/middleware/no-cache.js']);
-    assert.file(['src/middleware/example-validator.js']);
     assert.file(['src/middleware/error-handler.js']);
     assert.file(['src/core/run-health-checks.js']);
     assert.file(['src/core/logger.js']);
