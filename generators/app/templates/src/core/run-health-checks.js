@@ -11,7 +11,7 @@ function resultReducer(acc, { healthy, name, message }) {
   /* eslint-enable no-param-reassign */
 }
 
-module.exports = function runHealthChecks(healthChecks) {
+module.exports = healthChecks => {
   const initialResponse = {
     IsHealthy: true,
     Healthy: {},
@@ -19,7 +19,7 @@ module.exports = function runHealthChecks(healthChecks) {
     Timestamp: Date.now(),
   };
 
-  return Promise.all(healthChecks()).then((results) =>
+  return Promise.all(healthChecks()).then(results =>
     results.reduce(resultReducer, initialResponse),
   );
 };
