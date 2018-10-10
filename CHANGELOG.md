@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Added
+- [td linting rules](https://github.com/tomdaniels/td-eslint-config)
 
 ## [1.3.2][] - 2018-08-31
 ### Added
