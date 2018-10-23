@@ -6,6 +6,8 @@
 
 All you need to do is create a directory based on your project name, and let the generator do the rest!
 
+Eslint is setup out of the box, using these [shareable rules](https://github.com/tomdaniels/td-eslint-config)
+
 ```bash
 mkdir node-server && cd node-server
 npx -p yo -p generator-td-node-api-server -c 'yo td-node-api-server'
